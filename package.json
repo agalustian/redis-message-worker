@@ -1,0 +1,36 @@
+{
+  "name": "task1-worker",
+  "version": "0.0.1",
+  "description": "first task for 12trip",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha ./test/*.spec.* ",
+    "format": "prettier --write 'src/*.{js,jsx}'",
+    "start": "npm run test && node ."
+  },
+  "author": "A.Galustian",
+  "license": "ISC",
+  "dependencies": {
+    "ioredis": "^3.2.2",
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-spies": "^1.0.0",
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.9.0",
+    "mocha": "^5.0.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "airbnb-base",
+      "prettier"
+    ],
+    "env": {
+      "node": true,
+      "mocha": true
+    }
+  }
+}
